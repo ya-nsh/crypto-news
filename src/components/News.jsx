@@ -49,7 +49,6 @@ export default function News({ simplified }) {
         Today's Top Headlines
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:gap-3  xl:grid-cols-3 xl:gap-4  m-10 border-2 border-black rounded-md p-8">
-        {console.log(cryptoNews)}
         {cryptoNews.value.length === 0 && (
           <div className="flex justify-center items-center">
             <p className="text-xl font-bold text-center">No News Found</p>

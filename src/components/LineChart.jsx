@@ -18,9 +18,6 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     );
   }
 
-  console.log(coinHistory);
-  console.log(coinTimestamp);
-
   const data = {
     labels: coinTimestamp,
     datasets: [

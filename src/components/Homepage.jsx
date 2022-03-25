@@ -1,9 +1,7 @@
 import React from 'react';
 import millify from 'millify';
-import { Row, Col, Statistic } from 'antd';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import { Link } from 'react-router-dom';
-
 import { Cryptocurrencies, News } from '../components';
 
 export default function Homepage() {

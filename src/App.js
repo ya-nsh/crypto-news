@@ -1,35 +1,25 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-  Link
-} from 'react-router-dom';
-import { Layout, Typography, Space } from 'antd';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {
   Navbar,
   Homepage,
-  Exchanges,
   CryptoInfo,
   News,
-  Cryptocurrencies,
-  Footer
+  Cryptocurrencies
 } from './components';
 
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className="app ">
         <div>
           <Navbar />
         </div>
         <div className="main">
-          <Layout>
-            <div className="routes">
+          <section>
+            <div className="routes pb-10">
               <Routes>
                 <Route path="/" element={<Homepage />} />
-                <Route path="/exchanges" element={<Exchanges />} />
                 <Route
                   path="/cryptocurrencies"
                   element={<Cryptocurrencies />}
@@ -38,9 +28,8 @@ function App() {
                 <Route path="/news" element={<News />} />
               </Routes>
             </div>
-          </Layout>
+          </section>
         </div>
-        <div className="footer">{/* <Footer /> */}</div>
       </div>
     </Router>
   );
